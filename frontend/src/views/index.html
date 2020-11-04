@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Revisão de Desenvolvimento Web</title>
+  </head>
+  <body>
+    <main>
+      <form onsubmit="event.preventDefault()">
+        <h1>Revisão: Desenvolvimento Web</h1>
+        <div class="container">
+          <label for="name">Nome</label>
+          <input type="text" name="name" maxlength="50" />
+        </div>
+        <div class="container">
+          <label for="birthday">Data de Nascimento</label>
+          <input type="date" name="birthday" />
+        </div>
+        <div class="container">
+          <div class="containerSelect">
+            <label for="country">País</label>
+            <select name="country" onchange="getStates()" disabled></select>
+          </div>
+          <img
+            src="/images/loading.gif"
+            alt="loading"
+            class="loading loadingCountry"
+          />
+        </div>
+        <div class="container">
+          <div class="containerSelect">
+            <label for="state">Estado</label>
+            <select name="state" onchange="getCities()" disabled></select>
+          </div>
+          <img
+            src="/images/loading.gif"
+            alt="loading"
+            class="loading loadingState"
+          />
+        </div>
+        <div class="container">
+          <div class="containerSelect">
+            <label for="city">Cidade</label>
+            <select name="city" disabled></select>
+          </div>
+          <img
+            src="/images/loading.gif"
+            alt="loading"
+            class="loading loadingCity"
+          />
+        </div>
+        <div class="container">
+          <label for="neighborhood">Bairro</label>
+          <input type="text" name="neighborhood" />
+        </div>
+        <div class="container">
+          <label for="address">Endereço</label>
+          <input type="text" name="address" />
+        </div>
+        <div class="container botaoCadastrar">
+          <button onclick="postEntry()">Cadastrar</button>
+        </div>
+      </form>
+    </main>
+    <span class="footer">
+      <b>Por: Marcus Vinicius de Jesus - Prontuário: 300550X</b>
+    </span>
+    <script src="/js/index_axios.js"></script>
+  </body>
+</html>

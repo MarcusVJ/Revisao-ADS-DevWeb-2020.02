@@ -1,0 +1,24 @@
+{
+  "cadastros": [
+    {
+      "name": "Marcus Vinicius Jesus",
+      "birthday": "1992-02-19",
+      "country": "Brasil",
+      "state": "São Paulo",
+      "city": "Campinas",
+      "neighborhood": "Centro",
+      "address": "Rua 14 de Dezembro, 55",
+      "id": 1
+    },
+    {
+      "name": "Adriana Muller",
+      "birthday": "1990-08-20",
+      "country": "Brasil",
+      "state": "São Paulo",
+      "city": "Bragança Paulista",
+      "neighborhood": "Chácaras Fernão Dias",
+      "address": "Rua dos Diamantes, nro 600",
+      "id": 2
+    }
+  ]
+}
